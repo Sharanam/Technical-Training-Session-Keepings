@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  font-size: 13pt;
+  line-height: 1.5;
+  color: white;
+}
+.navbar-brand {
+  font-family: "Cedarville Cursive", cursive;
+  transform: scale(1.6) translate(min(3vw, 1.6em), min(1vw, 5px));
+  font-weight: 700;
+}
+.navbar {
+  padding: 0.2em 0;
+}
+.navbar * {
+  color: white !important;
+  font-size: 1.01em !important;
+}
+.my-content {
+  margin-top: 5em;
+  margin-bottom: 1em;
+}
+
+/* bg video */
+.background-video {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+.background-video video {
+  position: absolute;
+  inset: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.centered-box {
+  border-radius: 0.8em;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 0.3em 0.2em #937a36, -0.3em -0.3em 0.1em 0px #727213;
+}
+.projects {
+  background-color: rgba(255 255 255 / 0.9);
+  color: black;
+
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  /* min-height: 100vh; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 0.5em;
+}
+.projects h2 {
+  text-transform: capitalize;
+}
+.contact {
+  background-color: #bda38c41;
+  color: rgb(0, 0, 0);
+  padding: 3.5em 0;
+}
+.contact > div {
+  background: rgba(131, 58, 180, 0.2);
+  background: linear-gradient(
+    270deg,
+    rgba(131, 58, 180, 0.2) 0%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-radius: 0.5em;
+}
+.dark-tp-bg {
+  background-color: rgba(113, 82, 82, 0.479);
+  color: white;
+}
+.data dd {
+  margin-bottom: 0.9em;
+  padding-bottom: 0.5em;
+  border-radius: 0.8em;
+  border-bottom: 1px solid currentColor;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+.data dt {
+  padding-top: 0.5em;
+  border-radius: 0.8em;
+  border-top: 1px solid currentColor;
+  font-size: 1.3em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+.-mb-2-half-em {
+  /* margin-top: -2.5em; */
+  margin-block: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 1em;
+}
+.border-bottom {
+  border-bottom: 2px solid currentColor;
+}
+.avatar-user {
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  filter: sepia(30%);
+}
+.projects > .sticky {
+  height: max-content;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.my-photo img {
+  /* border: 0.3em solid white; */
+  /* border: 0.4em solid white; */
+  -webkit-filter: drop-shadow(3px 3px 0 #bf712b)
+    drop-shadow(-3px -3px 0 #bf712b);
+  filter: drop-shadow(3px 3px 0 #bf712b) drop-shadow(-3px -3px 0 #bf712b)
+    sepia(40%);
+  border-radius: 0.8em;
+  border-top: 0px;
+  margin: 0.3em;
+}
+.table {
+  background-color: rgb(79, 77, 77);
+  color: white;
+  text-align: center;
+  border-radius: 0.6em;
+}
+.me {
+  font-size: 1.5em;
+  padding-bottom: 0.4em;
+}
+.connect a {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.connect * {
+  font-size: 1.2em;
+  color: #7eb8eb !important;
+}
+
+.hoverable {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2em;
+}
+.hoverable a {
+  background-color: whitesmoke;
+  padding: 0.3em;
+  border-radius: 0.4em;
+}
+.hoverable img {
+  width: 3em;
+}
+
+.tools > .hoverable * {
+  transition: 0.5s transform;
+}
+.tools > .hoverable :hover {
+  background-color: white;
+  border-radius: 0.3em;
+  transform: scale(1.2);
+}

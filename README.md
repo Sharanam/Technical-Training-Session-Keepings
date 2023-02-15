@@ -1,2 +1,3 @@
 # Technical-Training-Session-Keepings
-Basic HTML, CSS, JS, etc.
+
+This repository contains materials from the technical training session on Investis Digital conducted by Abhishek Sir.
