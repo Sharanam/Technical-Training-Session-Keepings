@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="asset/style.css" />
+    <script src="asset/script.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="asset/style.css" />
-  <script src="asset/script.js"></script>
-</head>
-
-<body>
-  <!-- navbar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#intro">Sharanam Chotai</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#projects" class="btn"><i class="glyphicon glyphicon-education"></i>
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#experience" class="btn"><i class="glyphicon glyphicon-king"></i>
-              Experience</a>
-          </li>
-          <li>
-            <a href="#confabulate" class="btn"><i class="glyphicon glyphicon-cloud"></i>
-              Confabulate</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="background-video">
-    <!-- <video src="production ID_4102353.mp4" autoplay muted loop></video> -->
-    <img src="asset/875266997-4f6a0f479eb28f748f76e6af522e7c2a6c0a2afa3d106beeba88c35fc09f6378-d.avif"
-      alt="preview of the non-playable video"></img>
-  </div>
-  <div class="container my-content">
-    <div class="row" id="intro">
-      <div class="col-md-offset-1 col-md-10 centered-box">
-        <div class="my-photo text-center">
-          <!-- src="https://avatars.githubusercontent.com/u/38852691?v=4" -->
-          <img src="asset/image.png" alt="my picture" />
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#intro">Sharanam Chotai</a>
         </div>
-        <table class="table">
-          <tbody>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#projects" class="btn"
+                ><i class="glyphicon glyphicon-education"></i>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#experience" class="btn"
+                ><i class="glyphicon glyphicon-king"></i> Experience</a
+              >
+            </li>
+            <li>
+              <a href="#confabulate" class="btn"
+                ><i class="glyphicon glyphicon-cloud"></i> Confabulate</a
+              >
+            </li>
+            <li>
+              <a href="basic-business-card.html" target="_blank" class="btn"
+                ><i class="glyphicon glyphicon-credit-card"></i> Business
+                Card</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="background-video">
+      <!-- <video src="production ID_4102353.mp4" autoplay muted loop></video> -->
+      <img
+        src="asset/875266997-4f6a0f479eb28f748f76e6af522e7c2a6c0a2afa3d106beeba88c35fc09f6378-d.avif"
+        alt="preview of the non-playable video"
+      />
+    </div>
+    <div class="container my-content">
+      <div class="row" id="intro">
+        <div class="col-md-offset-1 col-md-10 centered-box">
+          <div class="my-photo text-center">
+            <!-- src="https://avatars.githubusercontent.com/u/38852691?v=4" -->
+            <img src="asset/image.png" alt="my picture" />
+          </div>
+          <div class="table">
             <tr>
               <td colspan="3">
                 <div class="me">I am Sharanam Chotai</div>
@@ -69,396 +89,519 @@
               </td>
             </tr>
 
-            <tr>
-              <td>
+            <div
+              style="
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-evenly;
+                gap: 0.3em;
+              "
+            >
+              <div>
                 <i class="glyphicon glyphicon-phone"></i> +91 834 797 5365
-              </td>
-              <td>
+              </div>
+              <div>
                 <i class="glyphicon glyphicon-envelope"></i>
                 sharanam.chotai@investisdigital.com
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" class="connect">
-                <a href="https://linkedin.com/in/sharanam-chotai" rel="nofollow" target="_blank">
-                  <p>Connect with me anytime:</p>
-                  <!-- <i class="glyphicon glyphicon-phone"></i> -->
-                  <img align="center" src="asset/linkedin.svg" alt="linkedin" style="height: 1.5em" />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td colspan="2" class="tools">
-                <p>Tools & Technologies:</p>
-                <div class="hoverable">
-                  <a href="https://developer.android.com" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
-                      alt="android" />
-                  </a>
-                  <a href="https://angular.io" rel="nofollow">
-                    <img
-                      src="https://camo.githubusercontent.com/9eecc42439347332f256a326363924551042f5b96235f972982512199476611a/68747470733a2f2f616e67756c61722e696f2f6173736574732f696d616765732f6c6f676f732f616e67756c61722f616e67756c61722e737667"
-                      alt="angular" data-canonical-src="https://angular.io/assets/images/logos/angular/angular.svg" />
-                  </a>
-                  <a href="https://www.arduino.cc/" rel="nofollow">
-                    <img
-                      src="https://camo.githubusercontent.com/b3a1cdd20d0f308634ddd4598cdaa729c2d77047f51e66fa7206b9b4bac94c23/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61726475696e6f2d312e737667"
-                      alt="arduino" data-canonical-src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" />
-                  </a>
-                  <a href="https://www.gnu.org/software/bash/" rel="nofollow">
-                    <img
-                      src="https://camo.githubusercontent.com/bbb327d6ba7708520eaafd13396fed64d73bf5df5c4cdd0ba03cf0843f7a9340/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676e755f626173682f676e755f626173682d69636f6e2e737667"
-                      alt="bash" data-canonical-src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" />
-                  </a>
-                  <a href="https://www.blender.org/" rel="nofollow">
-                    <img
-                      src="https://camo.githubusercontent.com/ce55bee379fa4d1a4e0633e2c8c87347b5699ef68d176faa458a3f1a1ae25454/68747470733a2f2f646f776e6c6f61642e626c656e6465722e6f72672f6272616e64696e672f636f6d6d756e6974792f626c656e6465725f636f6d6d756e6974795f62616467655f77686974652e737667"
-                      alt="blender"
-                      data-canonical-src="https://download.blender.org/branding/community/blender_community_badge_white.svg" />
-                  </a>
-                  <a href="https://www.w3schools.com/cpp/" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
-                      alt="cplusplus" />
-                  </a>
-                  <a href="https://www.w3schools.com/cs/" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
-                      alt="csharp" />
-                  </a>
-                  <a href="https://www.w3schools.com/css/" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                      alt="css3" />
-                  </a>
-                  <a href="https://dotnet.microsoft.com/" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg"
-                      alt="dotnet" />
-                  </a>
-                  <a href="https://expressjs.com" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
-                      alt="express" />
-                  </a>
-                  <a href="https://www.figma.com/" rel="nofollow">
-                    <img
-                      src="https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667"
-                      alt="figma" data-canonical-src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" />
-                  </a>
-                  <a href="https://git-scm.com/" rel="nofollow">
-                    <img
-                      src="https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667"
-                      alt="git" data-canonical-src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" />
-                  </a>
-                  <a href="https://golang.org" rel="nofollow">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"
-                      alt="go" />
-                  </a>
-                  <a href="https://heroku.com" rel="nofollow">
-                    <img
-                      src="https://camo.githubusercontent.com/df12cb598044a3f38efc1f45e3580558c324cf8789b79487125044eeebcc4dee/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6865726f6b752f6865726f6b752d69636f6e2e737667"
-                      alt="heroku" data-canonical-src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" />
-                  </a>
-                  <a href="https://www.w3.org/html/" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                      alt="html5" />
-                  </a>
-                  <a href="https://www.java.com" rel="nofollow">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-                      alt="java" />
-                  </a>
-                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                      alt="javascript" />
-                  </a>
-                  <a href="https://www.linux.org/" rel="nofollow">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
-                      alt="linux" />
-                  </a>
-                  <a href="https://www.mongodb.com/" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
-                      alt="mongodb" />
-                  </a>
-                  <a href="https://www.mysql.com/" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                      alt="mysql" />
-                  </a>
-                  <a href="https://nodejs.org" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-                      alt="nodejs" />
-                  </a>
-                  <a href="https://www.oracle.com/" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg"
-                      alt="oracle" />
-                  </a>
-                  <a href="https://www.photoshop.com/en" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
-                      alt="photoshop" />
-                  </a>
-                  <a href="https://www.php.net" rel="nofollow">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
-                      alt="php" />
-                  </a>
-                  <a href="https://postman.com" rel="nofollow">
-                    <img
-                      src="https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667"
-                      alt="postman"
-                      data-canonical-src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" />
-                  </a>
-                  <a href="https://www.python.org" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-                      alt="python" />
-                  </a>
-                  <a href="https://reactjs.org/" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-                      alt="react" />
-                  </a>
-                  <a href="https://www.sqlite.org/" rel="nofollow">
-                    <img
-                      src="https://camo.githubusercontent.com/1b8a779f280e099e2d67ab949dad604e25ce0d321e66474c04430201790b3874/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f73716c6974652f73716c6974652d69636f6e2e737667"
-                      alt="sqlite" data-canonical-src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" />
-                  </a>
-                  <a href="https://svelte.dev" rel="nofollow">
-                    <img
-                      src="https://camo.githubusercontent.com/6926de691c36b618f81c870430e0a5e0c2c4930f2b71a3e7682752fa8efe96c0/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f312f31622f5376656c74655f4c6f676f2e737667"
-                      alt="svelte"
-                      data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" />
-                  </a>
-                  <a href="https://www.typescriptlang.org/" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-                      alt="typescript" />
-                  </a>
-                  <a href="https://vuejs.org/" rel="nofollow">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
-                      alt="vuejs" />
-                  </a>
-                  <a href="https://vuetifyjs.com/en/" rel="nofollow">
-                    <img
-                      src="https://camo.githubusercontent.com/1f0458b532115b35288c1d92064eacf4fed093dff18bed7ede498bdfe42f6d06/68747470733a2f2f626573746f666a732e6f72672f6c6f676f732f767565746966792e737667"
-                      alt="vuetify" data-canonical-src="https://bestofjs.org/logos/vuetify.svg" />
-                  </a>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row" id="projects">
-      <div class="col-xs-12 projects -mb-2-half-em">
-        <div class="row">
-          <div class="col-sm-4 col-sm-12" style="
-          display: flex;
-          justify-content: center;
-      ">
-            <img style="height: auto" alt="Avatar" width="260" height="260" class="avatar-user"
-              src="asset/WhatsApp Image 2023-02-14 at 2.16.27 PM.jpeg" />
-          </div>
-          <div class="col-sm-8 col-sm-12">
-            <div class="sticky">
-              <h1 class="mb-2 border-bottom">My Project</h1>
+              </div>
             </div>
-            <div class="project-list">
-              <h2>BCA-Web-App-Dev-Exercise</h2>
-              <a href="https://github.com/Sharanam/BCA-Web-App-Dev-Exercise">View Source</a>
-              <hr />
-              <h2>City-Bus-Live-Status</h2>
-              <a href="https://github.com/Sharanam/City-Bus-Live-Status">View Source</a>
-              <hr />
-
-              <h2>educational-journey</h2>
-              <a href="https://github.com/Sharanam/educational-journey">View Source</a>
-
-              <hr />
-              <h2>GHP_MCA</h2>
-              <a href="https://github.com/Sharanam/GHP_MCA">View Source</a>
-              <hr />
-              <h2>js-thrown-out-assignment</h2>
-
-              <a href="https://github.com/Sharanam/js-thrown-out-assignment">View Source</a>
-              <hr />
-
-              <h2>Learning-Snippets-for-Kashyap-and-Dhruti</h2>
-              <a href="https://github.com/Sharanam/Learning-Snippets-for-Kashyap-and-Dhruti">View Source</a>
-              <hr />
-
-              <h2>pension-form-filler</h2>
-              <a href="https://github.com/Sharanam/pension-form-filler">View Source</a>
-              <hr />
-
-              <h2>reg-x-gen-i</h2>
-              <a href="https://github.com/Sharanam/reg-x-gen-i">View Source</a>
-              <hr />
-
-              <h2>riddhi_ig</h2>
-              <a href="https://github.com/Sharanam/riddhi_ig">View Source</a>
-              <hr />
-              <h2>SAMGS</h2>
-
-              <a href="https://github.com/Sharanam/SAMGS">View Source</a>
-              <hr />
-              <h2>https://github.com/Sharanam</h2>
-
-              <a href="https://github.com/Sharanam/https://github.com/Sharanam">View Source</a>
-              <hr />
-
-              <h2>Snakes-And-Ladders</h2>
-              <a href="https://github.com/Sharanam/Snakes-And-Ladders">View Source</a>
-              <hr />
-
-              <h2>Technical-Training-Session-Keepings</h2>
-              <a href="https://github.com/Sharanam/Technical-Training-Session-Keepings">View Source</a>
-              <hr />
-
-              <h2>Tic-Tac-Toe-VueJS</h2>
-              <a href="https://github.com/Sharanam/Tic-Tac-Toe-VueJS">View Source</a>
-              <hr />
-
-              <h2>TYBCA-AI-Exercises</h2>
-              <a href="https://github.com/Sharanam/TYBCA-AI-Exercises">View Source</a>
+            <div colspan="2" class="connect">
+              <a
+                href="https://linkedin.com/in/sharanam-chotai"
+                rel="nofollow"
+                target="_blank"
+              >
+                <p>Connect with me anytime:</p>
+                <!-- <i class="glyphicon glyphicon-phone"></i> -->
+                <img
+                  align="center"
+                  src="asset/linkedin.svg"
+                  alt="linkedin"
+                  style="height: 1.5em"
+                />
+              </a>
+            </div>
+            <div colspan="2" class="tools">
+              <p>Tools & Technologies:</p>
+              <div class="hoverable">
+                <a href="https://developer.android.com" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
+                    alt="android"
+                  />
+                </a>
+                <a href="https://angular.io" rel="nofollow">
+                  <img
+                    src="https://camo.githubusercontent.com/9eecc42439347332f256a326363924551042f5b96235f972982512199476611a/68747470733a2f2f616e67756c61722e696f2f6173736574732f696d616765732f6c6f676f732f616e67756c61722f616e67756c61722e737667"
+                    alt="angular"
+                    data-canonical-src="https://angular.io/assets/images/logos/angular/angular.svg"
+                  />
+                </a>
+                <a href="https://www.arduino.cc/" rel="nofollow">
+                  <img
+                    src="https://camo.githubusercontent.com/b3a1cdd20d0f308634ddd4598cdaa729c2d77047f51e66fa7206b9b4bac94c23/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61726475696e6f2d312e737667"
+                    alt="arduino"
+                    data-canonical-src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg"
+                  />
+                </a>
+                <a href="https://www.gnu.org/software/bash/" rel="nofollow">
+                  <img
+                    src="https://camo.githubusercontent.com/bbb327d6ba7708520eaafd13396fed64d73bf5df5c4cdd0ba03cf0843f7a9340/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676e755f626173682f676e755f626173682d69636f6e2e737667"
+                    alt="bash"
+                    data-canonical-src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg"
+                  />
+                </a>
+                <a href="https://www.blender.org/" rel="nofollow">
+                  <img
+                    src="https://camo.githubusercontent.com/ce55bee379fa4d1a4e0633e2c8c87347b5699ef68d176faa458a3f1a1ae25454/68747470733a2f2f646f776e6c6f61642e626c656e6465722e6f72672f6272616e64696e672f636f6d6d756e6974792f626c656e6465725f636f6d6d756e6974795f62616467655f77686974652e737667"
+                    alt="blender"
+                    data-canonical-src="https://download.blender.org/branding/community/blender_community_badge_white.svg"
+                  />
+                </a>
+                <a href="https://www.w3schools.com/cpp/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+                    alt="cplusplus"
+                  />
+                </a>
+                <a href="https://www.w3schools.com/cs/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+                    alt="csharp"
+                  />
+                </a>
+                <a href="https://www.w3schools.com/css/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                    alt="css3"
+                  />
+                </a>
+                <a href="https://dotnet.microsoft.com/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg"
+                    alt="dotnet"
+                  />
+                </a>
+                <a href="https://expressjs.com" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+                    alt="express"
+                  />
+                </a>
+                <a href="https://www.figma.com/" rel="nofollow">
+                  <img
+                    src="https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667"
+                    alt="figma"
+                    data-canonical-src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+                  />
+                </a>
+                <a href="https://git-scm.com/" rel="nofollow">
+                  <img
+                    src="https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667"
+                    alt="git"
+                    data-canonical-src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                  />
+                </a>
+                <a href="https://golang.org" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"
+                    alt="go"
+                  />
+                </a>
+                <a href="https://heroku.com" rel="nofollow">
+                  <img
+                    src="https://camo.githubusercontent.com/df12cb598044a3f38efc1f45e3580558c324cf8789b79487125044eeebcc4dee/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6865726f6b752f6865726f6b752d69636f6e2e737667"
+                    alt="heroku"
+                    data-canonical-src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"
+                  />
+                </a>
+                <a href="https://www.w3.org/html/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                    alt="html5"
+                  />
+                </a>
+                <a href="https://www.java.com" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                    alt="java"
+                  />
+                </a>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  rel="nofollow"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                    alt="javascript"
+                  />
+                </a>
+                <a href="https://www.linux.org/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                    alt="linux"
+                  />
+                </a>
+                <a href="https://www.mongodb.com/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+                    alt="mongodb"
+                  />
+                </a>
+                <a href="https://www.mysql.com/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                    alt="mysql"
+                  />
+                </a>
+                <a href="https://nodejs.org" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                    alt="nodejs"
+                  />
+                </a>
+                <a href="https://www.oracle.com/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg"
+                    alt="oracle"
+                  />
+                </a>
+                <a href="https://www.photoshop.com/en" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
+                    alt="photoshop"
+                  />
+                </a>
+                <a href="https://www.php.net" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
+                    alt="php"
+                  />
+                </a>
+                <a href="https://postman.com" rel="nofollow">
+                  <img
+                    src="https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667"
+                    alt="postman"
+                    data-canonical-src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                  />
+                </a>
+                <a href="https://www.python.org" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                    alt="python"
+                  />
+                </a>
+                <a href="https://reactjs.org/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                    alt="react"
+                  />
+                </a>
+                <a href="https://www.sqlite.org/" rel="nofollow">
+                  <img
+                    src="https://camo.githubusercontent.com/1b8a779f280e099e2d67ab949dad604e25ce0d321e66474c04430201790b3874/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f73716c6974652f73716c6974652d69636f6e2e737667"
+                    alt="sqlite"
+                    data-canonical-src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"
+                  />
+                </a>
+                <a href="https://svelte.dev" rel="nofollow">
+                  <img
+                    src="https://camo.githubusercontent.com/6926de691c36b618f81c870430e0a5e0c2c4930f2b71a3e7682752fa8efe96c0/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f312f31622f5376656c74655f4c6f676f2e737667"
+                    alt="svelte"
+                    data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg"
+                  />
+                </a>
+                <a href="https://www.typescriptlang.org/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                    alt="typescript"
+                  />
+                </a>
+                <a href="https://vuejs.org/" rel="nofollow">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
+                    alt="vuejs"
+                  />
+                </a>
+                <a href="https://vuetifyjs.com/en/" rel="nofollow">
+                  <img
+                    src="https://camo.githubusercontent.com/1f0458b532115b35288c1d92064eacf4fed093dff18bed7ede498bdfe42f6d06/68747470733a2f2f626573746f666a732e6f72672f6c6f676f732f767565746966792e737667"
+                    alt="vuetify"
+                    data-canonical-src="https://bestofjs.org/logos/vuetify.svg"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="experience" class="container-fluid">
-    <div class="row" style="
+    <div class="container-fluid">
+      <div class="row" id="projects">
+        <div class="col-xs-12 projects -mb-2-half-em">
+          <div class="row">
+            <div
+              class="col-sm-4 col-sm-12"
+              style="display: flex; justify-content: center"
+            >
+              <img
+                style="height: auto"
+                alt="Avatar"
+                width="260"
+                height="260"
+                class="avatar-user"
+                src="asset/WhatsApp Image 2023-02-14 at 2.16.27 PM.jpeg"
+              />
+            </div>
+            <div class="col-sm-8 col-sm-12">
+              <div class="sticky">
+                <h1 class="mb-2 border-bottom">My Project</h1>
+              </div>
+              <div class="project-list">
+                <h2>BCA-Web-App-Dev-Exercise</h2>
+                <a href="https://github.com/Sharanam/BCA-Web-App-Dev-Exercise"
+                  >View Source</a
+                >
+                <hr />
+                <h2>City-Bus-Live-Status</h2>
+                <a href="https://github.com/Sharanam/City-Bus-Live-Status"
+                  >View Source</a
+                >
+                <hr />
+
+                <h2>educational-journey</h2>
+                <a href="https://github.com/Sharanam/educational-journey"
+                  >View Source</a
+                >
+
+                <hr />
+                <h2>GHP_MCA</h2>
+                <a href="https://github.com/Sharanam/GHP_MCA">View Source</a>
+                <hr />
+                <h2>js-thrown-out-assignment</h2>
+
+                <a href="https://github.com/Sharanam/js-thrown-out-assignment"
+                  >View Source</a
+                >
+                <hr />
+
+                <h2>Learning-Snippets-for-Kashyap-and-Dhruti</h2>
+                <a
+                  href="https://github.com/Sharanam/Learning-Snippets-for-Kashyap-and-Dhruti"
+                  >View Source</a
+                >
+                <hr />
+
+                <h2>pension-form-filler</h2>
+                <a href="https://github.com/Sharanam/pension-form-filler"
+                  >View Source</a
+                >
+                <hr />
+
+                <h2>reg-x-gen-i</h2>
+                <a href="https://github.com/Sharanam/reg-x-gen-i"
+                  >View Source</a
+                >
+                <hr />
+
+                <h2>riddhi_ig</h2>
+                <a href="https://github.com/Sharanam/riddhi_ig">View Source</a>
+                <hr />
+                <h2>SAMGS</h2>
+
+                <a href="https://github.com/Sharanam/SAMGS">View Source</a>
+                <hr />
+                <h2>https://github.com/Sharanam</h2>
+
+                <a
+                  href="https://github.com/Sharanam/https://github.com/Sharanam"
+                  >View Source</a
+                >
+                <hr />
+
+                <h2>Snakes-And-Ladders</h2>
+                <a href="https://github.com/Sharanam/Snakes-And-Ladders"
+                  >View Source</a
+                >
+                <hr />
+
+                <h2>Technical-Training-Session-Keepings</h2>
+                <a
+                  href="https://github.com/Sharanam/Technical-Training-Session-Keepings"
+                  >View Source</a
+                >
+                <hr />
+
+                <h2>Tic-Tac-Toe-VueJS</h2>
+                <a href="https://github.com/Sharanam/Tic-Tac-Toe-VueJS"
+                  >View Source</a
+                >
+                <hr />
+
+                <h2>TYBCA-AI-Exercises</h2>
+                <a href="https://github.com/Sharanam/TYBCA-AI-Exercises"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="experience" class="container-fluid">
+      <div
+        class="row"
+        style="
           max-width: 100vw;
           background: url(asset/bg1.png);
           margin-block: -1em;
           background-size: cover;
           min-height: 90vh;
-        ">
-      <div class="col-sm-offset-3 col-sm-6 dark-tp-bg" style="padding-top: 1em">
-        <h1 class="mb-2 border-bottom text-center">Experience</h1>
-        <div class="data">
-          <dl>
-            <dt>ReactJS Intern</dt>
-            <dd>
-              I got to work on ReactJS, for the company which was making
-              templates for their clients. So that the actual website will not
-              take much longer.
-            </dd>
-            <dt>VueJS Developer</dt>
-            <dd>The project was of the admission portal for BSc Students.</dd>
-            <dt>Software Programmer </dt>
-            <dd>After the 3rd sem of MCA, I worked on a project for SP University.
-            </dd>
-            <dt>Trainee Engineer</dt>
-            <dd>In Investis Digital, My designation is Trainee Engineer.</dd>
-          </dl>
+        "
+      >
+        <div
+          class="col-sm-offset-3 col-sm-6 dark-tp-bg"
+          style="padding-top: 1em"
+        >
+          <h1 class="mb-2 border-bottom text-center">Experience</h1>
+          <div class="data">
+            <dl>
+              <dt>ReactJS Intern</dt>
+              <dd>
+                I got to work on ReactJS, for the company which was making
+                templates for their clients. So that the actual website will not
+                take much longer.
+              </dd>
+              <dt>VueJS Developer</dt>
+              <dd>The project was of the admission portal for BSc Students.</dd>
+              <dt>Software Programmer</dt>
+              <dd>
+                After the 3rd sem of MCA, I worked on a project for SP
+                University.
+              </dd>
+              <dt>Trainee Engineer</dt>
+              <dd>In Investis Digital, My designation is Trainee Engineer.</dd>
+            </dl>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="confabulate" class="container-fluid">
-    <div class="row contact -mb-2-half-em">
-      <div class="col-sm-offset-3 col-sm-6">
-        <h3 class="mb-2 border-bottom text-center">Confabulate</h3>
-        <div class="row">
-          <div style="width: min(100vw, 20em); margin: auto">
-            <div class="form-group">
-              <label for="firstName">First Name:</label>
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                <input type="text" id="firstName" placeholder="Enter first name here.." maxlength="20"
-                  class="form-control" />
+    <div id="confabulate" class="container-fluid">
+      <div class="row contact -mb-2-half-em">
+        <div class="col-sm-offset-3 col-sm-6">
+          <h3 class="mb-2 border-bottom text-center">Confabulate</h3>
+          <div class="row">
+            <div style="width: min(100vw, 20em); margin: auto">
+              <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <div class="input-group">
+                  <span class="input-group-addon"
+                    ><i class="fa fa-user"></i
+                  ></span>
+                  <input
+                    type="text"
+                    id="firstName"
+                    placeholder="Enter first name here.."
+                    maxlength="20"
+                    class="form-control"
+                  />
+                </div>
+                <small class="text-danger" id="firstNameErr"></small>
               </div>
-              <small class="text-danger" id="firstNameErr"></small>
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name:</label>
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                <input type="text" id="lastName" placeholder="Enter last name here.." maxlength="20"
-                  class="form-control" />
+              <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <div class="input-group">
+                  <span class="input-group-addon"
+                    ><i class="fa fa-user"></i
+                  ></span>
+                  <input
+                    type="text"
+                    id="lastName"
+                    placeholder="Enter last name here.."
+                    maxlength="20"
+                    class="form-control"
+                  />
+                </div>
+                <small class="text-danger" id="lastNameErr"></small>
               </div>
-              <small class="text-danger" id="lastNameErr"></small>
-            </div>
-            <div class="form-group">
-              <label for="email">E - mail ID:</label>
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <i class="fa fa-envelope"></i>
-                </span>
-                <input type="text" id="email" placeholder="Enter email id here..." class="form-control" />
+              <div class="form-group">
+                <label for="email">E - mail ID:</label>
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Enter email id here..."
+                    class="form-control"
+                  />
+                </div>
+                <small class="text-danger" id="emailErr"></small>
               </div>
-              <small class="text-danger" id="emailErr"></small>
-            </div>
-            <div class="form-group">
-              <label for="contact">
-                <i class="fa fa-phone"></i>
-                Phone Number:
-              </label>
-              <div class="input-group">
-                <span class="input-group-addon"> +91 </span>
-                <input maxlength="10" type="text" id="contact" placeholder="Enter contact number here..."
-                  class="form-control" />
+              <div class="form-group">
+                <label for="contact">
+                  <i class="fa fa-phone"></i>
+                  Phone Number:
+                </label>
+                <div class="input-group">
+                  <span class="input-group-addon"> +91 </span>
+                  <input
+                    maxlength="10"
+                    type="text"
+                    id="contact"
+                    placeholder="Enter contact number here..."
+                    class="form-control"
+                  />
+                </div>
+                <small class="text-danger" id="contactErr"></small>
               </div>
-              <small class="text-danger" id="contactErr"></small>
-            </div>
-            <div class="form-group">
-              <label for="gender"> Gender: </label>
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-male"></i> | <i class="fa fa-female"></i>
-                </span>
-                <select name="gender" id="gender" class="form-control">
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
+              <div class="form-group">
+                <label for="gender"> Gender: </label>
+                <div class="input-group">
+                  <span class="input-group-addon"
+                    ><i class="fa fa-male"></i> | <i class="fa fa-female"></i>
+                  </span>
+                  <select name="gender" id="gender" class="form-control">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div class="form-group text-center">
-              <a class="btn btn-primary" id="btnSubmit">
-                Submit
-                <i style="color: white" class="fa fa-user-plus"></i>
-              </a>
+              <div class="form-group text-center">
+                <a class="btn btn-primary" id="btnSubmit">
+                  Submit
+                  <i style="color: white" class="fa fa-user-plus"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="asset/validation.js"></script>
-  <style>
-    .raw>* {
-      background-color: white;
-      border-radius: 1rem;
-    }
+    <script src="asset/validation.js"></script>
+    <style>
+      .raw > * {
+        background-color: white;
+        border-radius: 1rem;
+      }
 
-    .raw>* {
-      box-shadow: 0px 0px 3px Gray;
-      margin-top: 40px;
-      margin-bottom: 40px;
-      color: gray;
-    }
+      .raw > * {
+        box-shadow: 0px 0px 3px Gray;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        color: gray;
+      }
 
-    i.fa,
-    label {
-      color: rgb(133, 101, 38);
-    }
+      i.fa,
+      label {
+        color: rgb(133, 101, 38);
+      }
 
-    .submit {
-      width: 100%;
-    }
-  </style>
-</body>
-
+      .submit {
+        width: 100%;
+      }
+    </style>
+  </body>
 </html>

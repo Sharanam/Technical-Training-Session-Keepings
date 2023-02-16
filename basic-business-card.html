@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(26, 36, 36);
+      }
+      h1 {
+        margin: 0.2em 0;
+      }
+      h2 {
+        margin: 0.4em 0;
+      }
+      .name-title {
+        margin: 0.3em 0;
+      }
+      .company-name {
+        margin: 0.2em 0;
+        color: orange;
+      }
+
+      .container-img {
+        position: relative;
+        width: max-content;
+        margin: 0.2em auto;
+      }
+      .image {
+        max-width: 100vw;
+        max-width: 100vw;
+      }
+
+      .overlay {
+        opacity: 0;
+        transition: 0.2s;
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      .container-img:hover .overlay {
+        opacity: 1;
+      }
+      .intro {
+        color: white;
+        font-size: min(3vw, 1.5rem);
+      }
+      .name-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .company-name {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        color: orange;
+      }
+      .email {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+      }
+      .phone {
+        position: absolute;
+        bottom: 2%;
+        left: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-img">
+      <img alt="Demo Image" src="asset/bsnsbg.jpg" class="image" />
+      <div class="overlay">
+        <div class="intro">
+          <div class="name-title">
+            <h1>Sharanam Chotai</h1>
+            <h3>Trainee Engineer</h3>
+          </div>
+          <div class="company-name">
+            <h2>Investis Digital India</h2>
+          </div>
+          <div class="email">sharanam.chotai@investisdigital.com</div>
+          <div class="phone">Ph.: +91 834 797 5365</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
